@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Lugar</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+    width: 375px;
+    height: 812px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+        /* Encabezado */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 40px;
+        }
+        .close-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        /* Detalles del lugar */
+        .place-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        .place-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .place-description {
+    font-size: 13px; /* Un poco más pequeño */
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+        /* Botones de acción */
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .action-button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold; /* Negrita */
+}
+
+        .direction-button,
+.share-button {
+    font-size: 14px; /* Asegurar que el texto sea pequeño */
+}
+        /* Barra de navegación */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+        }
+        .nav-bar button {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #333;
+        }
+        .nav-bar button.active {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Logo">
+            </div>
+            <div class="close-icon">✕</div>
+        </div>
+        <!-- Imagen y detalles del lugar -->
+        <h2 class="place-title">Castillo de Dénia</h2>
+	<div class="place-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Castillo_de_Denia.jpg/330px-Castillo_de_Denia.jpg" alt="Castillo de Dénia" style="width: 100%; height: 100%; border-radius: 10px;">
+        </div>
+        
+        <p class="place-description">
+            Es uno de los elementos que define la topografía histórica del núcleo urbano. En sus laderas se han descubierto restos de viviendas y fortificaciones de la Diannium romana.
+
+Su diseño se remonta a época islámica, entre los siglos XI y XII. Desde entonces, distintas reformas se reflejan en su arquitectura. En la época almohade, la construcción de la Torre Roja y la Torre del Consell en el siglo XV, los baluartes y otros sistemas defensivos estilo renacentista, así como la reedificación del Palacio del Gobernador, en los siglos XVI y XVII, bajo los auspicios del I duque de Lerma, V marqués de Denia.
+        </p>
+        <!-- Botones de acción -->
+        <div class="action-buttons">
+            <button class="action-button direction-button">Obtener dirección</button>
+            <button class="action-button share-button">Compartir</button>
+        </div>
+        
+    </div>
+</body>
+</html>

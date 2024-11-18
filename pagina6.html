@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardado</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            width: 375px;
+            height: 812px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        /* Encabezado */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 40px;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .title {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        /* Contenedor de las imágenes */
+        .saved-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .saved-item {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: left;
+        }
+        .saved-item img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        .saved-info {
+            padding: 8px;
+        }
+        .saved-info h3 {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        .saved-info p {
+            font-size: 12px;
+            color: #666;
+        }
+        /* Barra de navegación */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+        }
+        .nav-bar button {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #333;
+        }
+        .nav-bar button.active {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Logo">
+            </div>
+            <div class="menu-icon">X</div>
+        </div>
+        <h1 class="title">Guardado</h1>
+        <p class="subtitle">Has guardado 3 imagenes</p>
+        <!-- Elementos guardados -->
+        <div class="saved-items">
+            <div class="saved-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Castillo_de_Denia.jpg/330px-Castillo_de_Denia.jpg" alt="Castillo de Denia">
+                <div class="saved-info">
+                    <h3>Castillo de Denia</h3>
+                    <p>Denia</p>
+                </div>
+            </div>
+            <div class="saved-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Puerto%2C_Denia%2C_Espa%C3%B1a%2C_2022-07-13%2C_DD_24.jpg/541px-Puerto%2C_Denia%2C_Espa%C3%B1a%2C_2022-07-13%2C_DD_24.jpg" alt="Puerto de Denia">
+                <div class="saved-info">
+                    <h3>Puerto de Denia</h3>
+                    <p>Denia</p>
+                </div>
+            </div>
+            <div class="saved-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Montg%C3%B3.jpg/420px-Montg%C3%B3.jpg" alt="El Montgó">
+                <div class="saved-info">
+                    <h3>El Montgo</h3>
+                    <p>Denia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

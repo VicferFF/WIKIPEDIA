@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            width: 375px;
+            height: 812px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        /* Encabezado con logo */
+        .logo {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .logo img {
+            width: 80px;
+        }
+        /* Formulario de inicio de sesión */
+        h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: left; /* Alineación a la izquierda */
+}
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .forgot-password {
+    display: block;
+    margin-top: 200px; /* Mayor separación hacia abajo */
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+        .forgot-password:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Logo">
+        </div>
+        <h1>Iniciar Sesión</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="correo@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="">
+            </div>
+            <button type="button" class="login-btn">Iniciar sesión</button>
+            <a href="#" class="forgot-password">¿Has olvidado tu contraseña?</a>
+        </form>
+    </div>
+</body>
+</html>
